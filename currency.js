@@ -58,7 +58,7 @@ function calculateCurrency () {
             // to be able to show div block (display: block)
             document.getElementById('show').style.display = 'block';
 
-            document.getElementById('alt').innerHTML = `1 ${fromCurrencyCode}  =  ${exchangeRate} ${toCurrencyCode}`;
+            document.getElementById('alt').innerHTML = `1 ${fromCurrencyCode}  =  ${exchangeRate.toFixed(2)} ${toCurrencyCode}`;
 
             document.getElementById('tutarAlt').innerHTML = `Tutar : ${tutarDoviz} ${fromCurrencyCode}`;
             document.getElementById('cevrilenAlt').innerHTML = `Çevrilen Tutar : ${sonuc} ${toCurrencyCode}`;
