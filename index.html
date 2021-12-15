@@ -1,123 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
     <!-- burayı sonradan ekledim -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- FontAweSome -->
     <!-- <script src="font awesome id buraya yazilacak"></script> -->
-    <script src="https://kit.fontawesome.com/92d1262507.js" crossorigin="anonymous"></script>
-​
+    <script
+      src="https://kit.fontawesome.com/92d1262507.js"
+      crossorigin="anonymous"
+    ></script>
+    ​
     <title>Currency App</title>
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    
-​
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="pl-5 py-3 mr-auto">
-                <i class="fa fa-usd  logoDoviz" aria-hidden="true"></i>
-                <span class="navbar-brand mb-0 h1 font-weight-bold text-white">CURRENCY APP</span>
-            </div>
-​
-            <div class="pr-5 py-3 ml-auto">
-                <span class="navbar-brand mb-0 h1 font-weight-bold text-white" id="dateInfo"></span> <br>
-                <span class="navbar-brand mb-0 h1 ml-4 font-weight-bold text-white" id="localTime"></span>
-            </div>
+  </head>
+
+  <body>
+    ​
+    <div class="container-fluid">
+      <div class="row">
+        <div class="pl-5 py-3 mr-auto">
+          <i class="fa fa-usd logoDoviz" aria-hidden="true"></i>
+          <span class="navbar-brand mb-0 h1 font-weight-bold text-white"
+            >CURRENCY APP</span
+          >
         </div>
-​
-        <div class="sec1">
-            <div id="sorguekrani" class="row p-4 justify-content-center ml-4 mr-4 mt-4 mb-0 border-bottom">
-
-                <form>
-                    <div class="form-group mb-0">
-                        <label for="doviz"><span class="navbar-brand mb-0 h1 font-weight-bold text-white">Mevcut Döviz Cinsi</span></label>
-                        <select class="custom-select form-group" id="doviz">
-                            <!-- <option selected>Mevcut Döviz Cinsi</option> -->
-                            <option value="USD">USD,United States Dollar</option>
-                            <option value="EUR">EUR,Euro</option>
-                            <option value="GBP">GBP,British Pound Sterling</option>
-                            <option value="TRY">TRY,Turkish Lira</option>
-                            <option value="AUD">AUD,Australian Dollar</option>
-                            <option value="CAD">CAD,Canadian Dollar</option>
-                            <option value="CNY">CNY,Chinese Yuan</option>
-                            <option value="DKK">DKK,Danish Krone</option>
-                            <option value="NOK">NOK,Norwegian Krone</option>
-                            <option value="SEK">SEK,Swedish Krona</option>
-                            <option value="JPY">JPY,Japanese Yen</option>    
-                        </select>
-                   </div>
-
-                   <div class="form-group mb-0">
-                        <label for="cevrilecekDoviz"><span class="navbar-brand mb-0 h1 font-weight-bold text-white">Çevirilecek Döviz Cinsi</span></label>
-                        <select class="custom-select form-group" id="cevrilecekDoviz">
-                            <!-- <option selected>Çevirilecek Döviz Cinsi</option> -->
-                            <option value="TRY">TRY,Turkish Lira</option>
-                            <option value="USD">USD,United States Dollar</option>
-                            <option value="EUR">EUR,Euro</option>
-                            <option value="GBP">GBP,British Pound Sterling</option>
-                            <option value="AUD">AUD,Australian Dollar</option>
-                            <option value="CAD">CAD,Canadian Dollar</option>
-                            <option value="CNY">CNY,Chinese Yuan</option>
-                            <option value="DKK">DKK,Danish Krone</option>
-                            <option value="NOK">NOK,Norwegian Krone</option>
-                            <option value="SEK">SEK,Swedish Krona</option>
-                            <option value="JPY">JPY,Japanese Yen</option>
-                        </select>
-                   </div>
-
-                    <div class="form-group mb-4">
-                        <label for="tutar"><span class="navbar-brand mb-0 h1 font-weight-bold text-white">Tutar</span></label>
-                        <input type="number" class="form-control" id="tutar" placeholder="Tutar Giriniz...">
-                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                    </div>
-                                       
-                    <button style="width: 100%;" id="submit" class="btn btn-primary font-weight-bold" type="button">HESAPLAA</button>
-                </form>
-            </div>
-​
-            <div style="display: none" id="show" class="row p-4 justify-content-center ml-4 mr-4 mb-0 mt-0">
-                    <div class="row">
-                        <div class="col-12 justify-content-center">
-                           <table class="table table-borderless text-white text-left font-weight-bold">
-                                <tbody> 
-                                    <tr>
-                                        <td id="alt" style="text-align: left; padding-left: 22px; width: 100%;"></td>
-                                    </tr>                              
-                                    <tr>
-                                        <td id="tutarAlt" style="text-align: left; padding-left: 22px; width: 100%;"></td>                                       
-                                    </tr>        
-                                    <tr>
-                                        <td id="cevrilenAlt" style="text-align: left; padding-left: 22px; width: 100%;"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-            </div>
+        ​
+        <div class="pr-5 py-3 ml-auto">
+          <span
+            class="navbar-brand mb-0 h1 font-weight-bold text-white"
+            id="dateInfo"
+          ></span>
+          <br />
+          <span
+            class="navbar-brand mb-0 h1 ml-4 font-weight-bold text-white"
+            id="localTime"
+          ></span>
         </div>
+      </div>
+      ​
+      <div class="sec1">
+        <div
+          id="sorguekrani"
+          class="
+            row
+            p-4
+            justify-content-center
+            ml-4
+            mr-4
+            mt-4
+            mb-0
+            border-bottom
+          "
+        >
+          <form style="width: 93%">
+            <div class="form-group mb-0">
+              <label for="doviz"
+                ><span class="navbar-brand mb-0 h1 font-weight-bold text-white"
+                  >From Currency</span
+                ></label
+              >
+              <select class="custom-select form-group" id="doviz">
+                <!-- <option selected>Mevcut Döviz Cinsi</option> -->
+                <option value="USD">USD,United States Dollar</option>
+                <option value="EUR">EUR,Euro</option>
+                <option value="GBP">GBP,British Pound Sterling</option>
+                <option value="TRY">TRY,Turkish Lira</option>
+                <option value="AUD">AUD,Australian Dollar</option>
+                <option value="CAD">CAD,Canadian Dollar</option>
+                <option value="CNY">CNY,Chinese Yuan</option>
+                <option value="DKK">DKK,Danish Krone</option>
+                <option value="NOK">NOK,Norwegian Krone</option>
+                <option value="SEK">SEK,Swedish Krona</option>
+                <option value="JPY">JPY,Japanese Yen</option>
+              </select>
+            </div>
+
+            <div class="form-group mb-5">
+              <label for="tutar"
+                ><span class="navbar-brand mb-0 h1 font-weight-bold text-white"
+                  >Amount</span
+                ></label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="tutar"
+                placeholder="Enter Amount..."
+              />
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+
+            <div class="form-group mt-4 mb-4">
+              <label for="cevrilecekDoviz"
+                ><span class="navbar-brand mb-0 h1 font-weight-bold text-white"
+                  >To Currency</span
+                ></label
+              >
+              <select class="custom-select form-group" id="cevrilecekDoviz">
+                <!-- <option selected>Çevirilecek Döviz Cinsi</option> -->
+                <option value="TRY">TRY,Turkish Lira</option>
+                <option value="USD">USD,United States Dollar</option>
+                <option value="EUR">EUR,Euro</option>
+                <option value="GBP">GBP,British Pound Sterling</option>
+                <option value="AUD">AUD,Australian Dollar</option>
+                <option value="CAD">CAD,Canadian Dollar</option>
+                <option value="CNY">CNY,Chinese Yuan</option>
+                <option value="DKK">DKK,Danish Krone</option>
+                <option value="NOK">NOK,Norwegian Krone</option>
+                <option value="SEK">SEK,Swedish Krona</option>
+                <option value="JPY">JPY,Japanese Yen</option>
+              </select>
+            </div>
+
+            <button
+              style="width: 100%"
+              id="submit"
+              class="btn btn-primary font-weight-bold"
+              type="button"
+            >
+              CALCULATE
+            </button>
+          </form>
+        </div>
+        ​
+        <div
+          style="display: none"
+          id="show"
+          class="row p-4 justify-content-center ml-4 mr-4 mb-0 mt-0"
+        >
+          <div class="row">
+            <div class="col-12 justify-content-center">
+              <table
+                class="
+                  table table-borderless
+                  text-white text-left
+                  font-weight-bold
+                "
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      id="alt"
+                      style="text-align: left; padding-left: 22px; width: 100%"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      id="tutarAlt"
+                      style="text-align: left; padding-left: 22px; width: 100%"
+                    ></td>
+                  </tr>
+                  <!-- <tr>
+                    <td
+                      id="cevrilenAlt"
+                      style="text-align: left; padding-left: 22px; width: 100%"
+                    ></td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap kullanınca olması gereken linkler -->
-​
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    ​
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="currency.js"></script>
-</body>
+  </body>
 </html>
